@@ -1,0 +1,71 @@
+$dark-gray-cyan: hsl(186, 14%, 43%);
+$grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $light-grayish-cyan;
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    opacity: 0;
+  }
+  input {
+    font-size: 24px;
+  }
+  // height: 100vh;
+  // display: block;
+  // justify-content: center;
+  // align-items: center;
+  overflow: hidden;
+}
+.app {
+  overflow: hidden;
+  font-family: "Space Mono", monospace;
+  background-color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  height: 400px;
+  min-width: 900px;
+  max-width: 900px;
+
+  .left-side {
+    padding: 2rem 2rem;
+    flex: 1;
+    @media screen and (max-width: 950px) {
+      width: 550px;
+    }
+    @media screen and (max-width: 678px) {
+      width: 450px;
+    }
+    @media screen and (max-width: 450px) {
+      width: 350px;
+      padding-bottom: 0;
+    }
+    @media screen and (max-width: 350px) {
+      width: 200px;
+    }
+  }
+  .right-side {
+    flex: 1;
+
+    padding: 2rem;
+  }
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+}

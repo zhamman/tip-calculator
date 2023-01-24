@@ -1,0 +1,49 @@
+$dark-cyan: hsl(183, 100%, 15%);
+$dark-gray-cyan: hsl(186, 14%, 43%);
+$grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$very-light-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+.bill-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  label {
+    margin-bottom: 0.5rem;
+  }
+  input {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 5px;
+    background-color: $very-light-grayish-cyan;
+    :focus {
+      outline: none;
+      border: 2px solid $dark-gray-cyan;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 18px;
+    }
+  }
+}
+.num-of-ppl {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  label {
+    margin-bottom: 0.5rem;
+  }
+  input {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 5px;
+    background-color: $very-light-grayish-cyan;
+    :focus {
+      outline: none;
+      border: 2px solid $dark-gray-cyan;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 18px;
+    }
+  }
+}
